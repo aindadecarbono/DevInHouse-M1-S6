@@ -4,11 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title id="titulo">Título da página</title>
+    <title id="titulo">Calculadora</title>
   </head>
   <body>
-    <p>Exercício 1</p>
-    <button id="meuBotao" onclick="mudarTitulo()">Alterar título</button>
+    <p>Exercício 2</p>
+    <div class="calculadora">
+      <label>Digite o primeiro número</label>
+      <input type="number" placeholder="Digite um número" id="n1" />
+      <label>Digite o segundo número</label>
+      <input type="number" placeholder="Digite um número" id="n2" />
+      <select name="select" id="seletor">
+        <option disabled selected hidden value="">Operações</option>
+        <option value="+">Soma</option>
+        <option value="-">Subtração</option>
+        <option value="/">Divisão</option>
+        <option value="*">Multiplicação</option>
+      </select>
+
+      <button id="meuBotao" onclick="calcular()">Calcular</button>
+      <p id="resposta"></p>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
