@@ -1,9 +1,13 @@
-function atribuirValores() {
-  let titulo = document.querySelector('h1')
-  let descricao = document.querySelector('#descricao')
-  let listaItens = document.querySelectorAll('.itens')
+function inverter() {
+  let lista = document.querySelectorAll('li')
 
-  console.log(titulo)
-  console.log(descricao)
-  console.log(listaItens)
+  for (let i = 0; i < lista.length; i++) {
+    if (lista[i].className == 'azul') {
+      lista[i].classList.remove('azul')
+      lista[i].classList.add('vermelho')
+    } else if (lista[i].className == 'vermelho') {
+      lista[i].classList.remove('vermelho')
+      lista[i].classList.add('azul')
+    }
+  }
 }

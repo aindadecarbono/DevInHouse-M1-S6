@@ -2,18 +2,26 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Exercício 9</title>
+    <title>Exercício 10</title>
+    <style>
+      .azul {
+        color: blue;
+      }
+      .vermelho {
+        color: red;
+      }
+    </style>
   </head>
-  <body onload="atribuirValores()">
-    <h1>Titulo</h1>
-    <p>subtítulo</p>
-    <p id="descricao">Lista de afazeres</p>
+  <body>
     <ul>
-      <li class="itens">Ex 1</li>
-      <li class="itens">Ex 2</li>
-      <li class="itens">Ex 3</li>
-      <li class="itens">Ex 4</li>
+      <li class="azul">Item</li>
+      <li class="vermelho">Item</li>
+      <li class="azul">Item</li>
+      <li class="vermelho">Item</li>
+      <li class="azul">Item</li>
+      <li class="vermelho">Item</li>
     </ul>
-    <script src="./index.js"></script>
+    <button onclick="inverter()">Inverter</button>
   </body>
+  <script src="index.js"></script>
 </html>
