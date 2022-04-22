@@ -1,13 +1,20 @@
 const getCep = () => {
   let uf = document.getElementById('uf').value
-  if (uf.length != 2) {
-    alert('Digite um UF válido')
-    return
-  }
 
   let cidade = document.getElementById('cidade').value
 
   let logradouro = document.getElementById('logradouro').value
+
+  if (uf.length != 2 || uf == '') {
+    alert('Digite um UF válido')
+    return
+  } else if (cidade == '') {
+    alert('Digite uma cidade válida')
+    return
+  } else if (logradouro == '') {
+    alert('Digite um logradouro válido')
+    return
+  }
 
   fetchApi(uf, cidade, logradouro)
 }
